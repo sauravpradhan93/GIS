@@ -1,0 +1,135 @@
+app-slidebar {
+  position: absolute;
+  top: 20px;
+  
+}
+#hotel_map {
+    height: 700px;
+    width: 100%;
+  }
+  .ol-popup {
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #cccccc;
+    bottom: 12px;
+    left: -50px;
+    min-width: 280px;
+  }
+  .ol-popup:after, .ol-popup:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  .ol-popup:after {
+    border-top-color: white;
+    border-width: 10px;
+    left: 48px;
+    margin-left: -10px;
+  }
+  .ol-popup:before {
+    border-top-color: #cccccc;
+    border-width: 11px;
+    left: 48px;
+    margin-left: -11px;
+  }
+  .ol-popup-closer {
+    text-decoration: none;
+    position: absolute;
+    top: 2px;
+    right: 8px;
+  }
+  .ol-popup-closer:after {
+    content: "✖";
+  }
+
+  #slidebar {
+    display: flex;
+    justify-content: space-between;
+    background: #aad3df;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .sliderDiv {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+  }
+
+  .sliderHeader {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  .sliderInput {
+    margin-left: 20px;
+  }
+
+  .sliderInput {
+    -webkit-appearance: none;
+    /* width: 100%; */
+    height: 10px;
+    border-radius: 5px;  
+    background: white;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    margin-top: 10px;
+    direction: rtl;
+  }
+  
+  .sliderInput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%; 
+    background: #21ca56;
+    cursor: pointer;
+  }
+  
+  .sliderInput::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #21ca56;
+    cursor: pointer;
+  }
+
+  .sliderInput:disabled::-moz-range-thumb {
+    background: gray;
+  }
+
+  .sliderInput:disabled::-webkit-slider-thumb {
+    background: gray;
+  }
+
+  .sliderInput:disabled {
+    background: lightgray;
+  }
+
+  .sliderSwitch {
+    widows: 20px;
+    height: 20px;
+    zoom: 1.5;
+    margin-top: -.5px;
+    margin-right: 5px;
+  }
+
+  .sliderValue {
+    color: red;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 5px;
+  }

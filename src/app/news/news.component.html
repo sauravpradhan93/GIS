@@ -1,0 +1,22 @@
+<mat-sidenav-container class="container">
+<mat-card class="example-card"  *ngFor="let article of Aarticles">
+        <mat-card-header>
+          <div mat-card-avatar 
+          [ngStyle]="{'background-image': 'url(../assets/images/'+ article.source.id +'.png)'}" 
+          class="example-header-image">
+        </div>
+          <mat-card-title class="title">{{article.title}}</mat-card-title>
+          <mat-card-subtitle>{{article.source.name}}</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image class="img-article" src={{article.urlToImage}} alt="">
+        <mat-card-content>
+          <p>
+            {{article.description}}
+          </p>
+        </mat-card-content>
+        <a mat-button color="primary" href={{article.url}} target="_blank" ><mat-icon>find_in_page</mat-icon> More</a>
+        </mat-card>
+        </mat-sidenav-container>
+    
+
+    

@@ -1,0 +1,19 @@
+.container {
+    width: 50%;
+    height: 80%;
+    
+}
+.example-card{
+    margin-top: 12px;
+    margin-bottom: 40px;
+}
+
+.example-header-image { 
+    background-size: cover;
+  }
+  .img-article{
+    height: 250px;
+}
+.title{
+    font-weight: bold;
+}
